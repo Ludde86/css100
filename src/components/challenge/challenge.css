@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+.challenge {
+    border-radius: 6px;
+    width: 25rem;
+    height: 25rem;
+
+    background: linear-gradient(45deg, #43389F, #4ec6ca  );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.challenge__numbers {
+    /* border: 1px solid black; */
+    display: flex;
+    position: relative;
+}
+
+.challenge__numbers_nr1-dot {
+    background-color: #fff;
+    width: 20px;
+    height: 35px;
+    border-radius: 2px;
+
+    transform: rotate(55deg);
+    
+    position: absolute;
+    left: -18px;
+    top: 0px;
+}
+
+.challenge__numbers_nr1, .challenge__numbers_nr0 {
+    box-shadow: 0 0 6px #999;
+}
+
+.challenge__numbers_nr1 {
+    background-color: #fff;
+    width: 22px;
+    height: 90px;
+    border-radius: 2px;
+
+    z-index: 5;
+    margin-right: -10px;
+}
+
+.challenge__numbers_nr0 {
+    border: 22px solid #fff;
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+}
+
+#nr01 {
+    z-index: 3;
+    margin-right: -10px;
+}
+
+#nr02 {
+    margin-right: -10px;
+}
+
+.challenge__title, .challenge__text {
+    font-family: 'Courier Prime', monospace;
+    color: #fff;
+}
+
+.challenge__title {
+    font-size: 70px;
+    max-height: 64px;
+}
+
+.challenge__text {
+    font-size: 22px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+}
